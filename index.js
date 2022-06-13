@@ -21,7 +21,7 @@ let adminpass = "admin";
         alert(`Incorrect Password!`);
         
     }else {
-        window.location.href = 'index.html'
+        window.location.href = 'form.html'
     };
     }
 

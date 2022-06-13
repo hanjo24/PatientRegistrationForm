@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Patient Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <H1>Patient Form</H1>
+        <h2>Welcome</h2>
+    
+    <table>
+        <form action="records.html" method="GET" id="form">
+        <tr>
+            <td>
+                <input type="text" id="fname" class="fname"> <br>
+                <label for="fname" >First Name:*</label>
+                <small></small>
+            </td>
+            <td>
+                <input type="text" id="mname" class="mname"> <br>
+                <label for="mname" >Middle Name:</label>       
+            </td>
+            <td>
+                <input type="text" id="lname" class="lname"> <br>
+                <label for="lname" >Last Name:*</label>
+                <small></small>      
+            </td>
+        </tr>
+        <tr >
+            <td colspan="3">
+                <textarea name="address" id="address" class="address" cols="70" rows="2"></textarea> <br>
+                <label for="address">Address:*</label>
+                <small></small>  
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="date" name="" id="birthday" class="birthday"> <br>
+                <label for="birthday">Birthdate:*</label>
+            </td>
+            <td>
+                <input type="number" name="" id="contactnumber" class="contactnumber"> <br>
+                <label for="contactnumber">Contact Number:*</label>
+            </td>
+            <td>
+                <label for="gender">Gender:</label> <br>
+                <input type="radio" id="gender" name="gender" value="Male" checked>
+                <label for="gender">Male</label>
+                <input type="radio" id="gender" name="gender" value="Female">
+                <label for="gender">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="medicalhistory">Medical History:</label>
+            </td>
+            <td>
+                <input type="checkbox" name="medicalhistory" id="medicalhistory" value="Asthma">
+                <label for="">Asthma</label> <br>
+                <input type="checkbox" name="medicalhistory" id="medicalhistory" value="Cancer">
+                <label for="">Cancer</label> <br>
+                <input type="checkbox" name="medicalhistory" id="medicalhistory" value="Cardiac Disease">
+                <label label for="">Cardiac Disease</label> <br>
+                <input type="checkbox" name="medicalhistory" id="medicalhistory" value="Diabetes">
+                <label label for="">Diabetes</label> <br>
+            </td>
+            <td>
+                <input type="checkbox" name="medicalhistory" id="medicalhistory" value="Hypertension">
+                <label for="">Hypertension</label> <br>
+                <input type="checkbox" name="medicalhistory" id="medicalhistory" value="Psychiatric Disorder">
+                <label for="">Psychiatric Disorder</label> <br>
+                <input type="checkbox" name="medicalhistory" id="medicalhistory" value="Epilepsy">
+                <label label for="">Epilepsy</label> <br>
+                <input type="checkbox" name="medicalhistory" id="medicalhistory" value="Others">
+                <label label for="">Others</label> <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="currentsymptoms">Current Symptoms:</label>
+            </td>
+            <td>
+                <select name="symptoms" id="symptoms" multiple>
+                    <option value="Chest Pain">Chest Pain</option>
+                    <option value="Respiratory">Respiratory</option>
+                    <option value="Hematological">Hematological</option>
+                    <option value="Lympathic">Lympathic</option>
+                    <option value="Neurological">Neurological</option>
+                </select>
+            </td>
+            <td>
+                <label for="">Are you currently taking medication?</label> <br>
+                <input type="radio" id="chkYes" name="meds" onclick="EnableDisableTextBox()" />
+                <label for="gender">Yes</label><br>
+                <input type="radio" id="chkNo" name="meds" onclick="EnableDisableTextBox()" checked/>
+                <label for="gender">No</label><br>
+                <input type="text" name="txtmeds" id="txtmeds" class="txtmeds" disabled="disabled">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <button type="reset" class="reset">Reset</button>
+                <button type="submit" class="button" id="button-send">Submit</button>
+            </td>
+        </tr>
+    </form>  
+    </table>
+</div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="form.js"></script>
+</body>
+</html>
